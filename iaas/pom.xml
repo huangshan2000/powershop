@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>gateway</module>
+        <module>auth-server</module>
+        <module>auth-server</module>
     </modules>
 
     <properties>

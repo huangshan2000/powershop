@@ -1,0 +1,45 @@
+# 端口号
+server:
+  port: 1001
+# 微服务名称
+spring:
+  application:
+    name: gateway
+#  cloud:
+#    # 网关配置信息
+#    gateway:
+#      discovery:
+#        locator:
+#          #开启动态路由
+#          enabled: true
+#          #微服务名称，转小写
+#          lower-case-service-id: true
+#    nacos:
+#      # 注册中心配置
+#      config:
+#        server-addr: localhost:8848
+#        namespace: 6204ad02-9724-49d6-86b6-f1eb8f87e810
+#        group: DEFAULT_GROUP
+#        username: nacos
+#        password: nacos
+#  # Redis配置信息
+#  redis:
+#    host: localhost
+#    port: 6379
+#    database: 15
+#    password: 123456
+#  # RabbitMQ配置信息
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    virtual-host: /
+#    username: root
+#    password: root
+#    listener:
+#      simple:
+#        # 消费者消息确定模式，手动应答模式
+#        acknowledge-mode: manual
+#    # 提供者消息确认模式
+#    publisher-confirm-type: correlated
+#    # 提供者发送消息返回确认信息
+#    publisher-returns: true
