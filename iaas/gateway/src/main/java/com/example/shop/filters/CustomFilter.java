@@ -1,6 +1,6 @@
 package com.example.shop.filters;
 
-import com.example.shop.constant.GatewayConstants;
+import com.example.shop.constants.GatewayConstants;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;

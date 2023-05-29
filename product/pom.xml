@@ -9,17 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>iaas</artifactId>
+    <artifactId>product</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>gateway</module>
-        <module>auth-server</module>
-        <module>auth-server</module>
+        <module>product-api</module>
+        <module>product-service</module>
+        <module>product-api</module>
     </modules>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
 
 </project>

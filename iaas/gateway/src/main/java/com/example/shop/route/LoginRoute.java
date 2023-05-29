@@ -2,7 +2,7 @@ package com.example.shop.route;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.example.shop.constant.GatewayConstants;
+import com.example.shop.constants.GatewayConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;

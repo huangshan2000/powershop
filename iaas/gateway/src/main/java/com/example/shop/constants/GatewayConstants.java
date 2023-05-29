@@ -1,6 +1,4 @@
-package com.example.shop.constant;
-
-import org.springframework.http.HttpHeaders;
+package com.example.shop.constants;
 
 import java.util.Arrays;
 import java.util.List;

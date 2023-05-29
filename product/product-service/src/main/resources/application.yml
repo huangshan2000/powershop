@@ -1,0 +1,49 @@
+# 端口号
+server:
+  port: 4001
+# 微服务名称
+spring:
+  application:
+    name: product-service
+#  # ES配置
+#  elasticsearch:
+#    rest:
+#      uris: http://localhost:9200
+#  jackson:
+#    # 定义时区格式
+#    time-zone: GMT+8
+#    # 定义时间返回的格式
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    # 去除返回的json中的null值
+#    default-property-inclusion: non_null
+#  mvc:
+#    # 接收时日期的格式化
+#    format:
+#      time: HH:mm:ss
+#      date: yyyy-MM-dd
+#      date-time: yyyy-MM-dd HH:mm:ss
+#feign:
+#  hystrix:
+#    enabled: true
+#ribbon:
+#  ReadTimeout: 5000
+#  ConnectTimeout: 5000
+#hystrix:    #hystrix的全局控制
+#  command:
+#    default:    #default是全局控制，也可以换成单个方法控制，把default换成方法名即可
+#      fallback:
+#        isolation:
+#          semaphore:
+#            maxConcurrentRequests: 1000
+#      circuitBreaker:
+#        enabled: true   #开启断路器
+#        requestVolumeThreshold: 20   #失败次数（阀值）
+#        sleepWindowInMilliseconds: 30000    #窗口时间
+#        errorThresholdPercentage: 60    #失败率
+#      execution:
+#        isolation:
+#          strategy: SEMAPHORE  #使用信号量隔离方式
+#          thread:
+#            timeoutInMilliseconds: 5000
+#          semaphore:
+#            maxConcurrentRequests: 1000  #最大并发量

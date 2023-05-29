@@ -4,33 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="初始项目依赖创建">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/auth-server/src/main/java/com/example/shop/AuthServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/auth-server/src/main/java/com/example/shop/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/auth-server/src/main/java/com/example/shop/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/auth-server/src/main/java/com/example/shop/config/WebSecurityServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/auth-server/src/main/java/com/example/shop/contants/AuthServerConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/auth-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/auth-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/auth-server/src/main/resources/rsa/sz2212.jks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/constant/GatewayConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/filters/CustomFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/route/LoginRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="授权服务器搭建和登录操作">
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/RedisCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/RequestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/contants/CommonContants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/entity/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/rsa/sz2212.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/dto/MenuAndAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/dto/SysMenuDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/dto/SysUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/ManagerServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Prod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdComm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdFavorite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdProp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdPropValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdTagReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Sku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/ProductServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iaas/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/auth-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/auth-server/src/main/java/com/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/GatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/constant/GatewayConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/filters/CustomFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/route/LoginRoute.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iaas/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/constant/GatewayConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/constants/GatewayConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/filters/CustomFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/filters/CustomFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/route/LoginRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/route/LoginRoute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iaas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +65,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="package.json" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="5748525e-70f0-4193-896e-9f99476224e3" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,6 +97,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -77,7 +110,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/empty/sz2212/stage5/powershop/powershop",
+    "last_opened_file_path": "E:/empty/sz2212/stage5/powershop/powershop/mall4v/package.json",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,8 +119,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.10644531",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "1e68571295964597a29e26c444df8ff4",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "spring.configuration.checksum": "1195745b344e5dffcdce9778067f10d6",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -101,8 +134,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\empty\sz2212\powershop\powershop\iaas\auth-server\src\main\resources\rsa" />
-      <recent name="E:\empty\sz2212\powershop\powershop\iaas\auth-server\src\main\resources" />
+      <recent name="E:\empty\sz2212\stage5\powershop\powershop\product\product-api\src\main\java\com\example\shop" />
+      <recent name="E:\empty\sz2212\stage5\powershop\powershop\product\product-service\src\main\resources" />
+      <recent name="E:\empty\sz2212\stage5\powershop\powershop\manager\manager-api\src\main\java\com\example\shop" />
+      <recent name="E:\empty\sz2212\stage5\powershop\powershop\manager\manager-service\src\main\resources" />
+      <recent name="E:\empty\sz2212\stage5\powershop\powershop\common\src\main\resources\rsa" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,7 +149,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.GatewayApplication">
-    <configuration name="WebSecurityServerConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.example.shop.config.WebSecurityServerConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.shop.config.WebSecurityServerConfig" />
       <module name="auth-server" />
       <extension name="coverage">
@@ -166,16 +202,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ManagerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="manager-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.shop.ManagerServiceApplication" />
+      <option name="VM_PARAMETERS" value="-Xms64m -Xmx128m" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="product-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.shop.ProductServiceApplication" />
+      <option name="VM_PARAMETERS" value="-Xms64m -Xmx128m" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/mall4v/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Application.WebSecurityServerConfig" />
+      <item itemvalue="Application.com.example.shop.config.WebSecurityServerConfig" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.ManagerServiceApplication" />
+      <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.AuthServerApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.AuthServerApplication" />
-        <item itemvalue="Application.WebSecurityServerConfig" />
+        <item itemvalue="Spring Boot.ProductServiceApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Application.com.example.shop.config.WebSecurityServerConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +274,9 @@
       <workItem from="1684899899503" duration="7377000" />
       <workItem from="1684976951229" duration="25513000" />
       <workItem from="1685062356784" duration="691000" />
-      <workItem from="1685075115868" duration="8444000" />
+      <workItem from="1685075115868" duration="17944000" />
+      <workItem from="1685244647105" duration="15146000" />
+      <workItem from="1685327427150" duration="25491000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目依赖创建">
       <created>1684938131681</created>
@@ -199,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684938131681</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="授权服务器搭建和登录操作">
+      <created>1685089677779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685089677779</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +303,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -218,9 +317,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始项目依赖创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始项目依赖创建" />
+    <MESSAGE value="授权服务器搭建和登录操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="授权服务器搭建和登录操作" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
