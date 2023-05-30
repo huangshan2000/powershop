@@ -4,58 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="授权服务器搭建和登录操作">
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/RedisCacheConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/RequestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/ResourceServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/contants/CommonContants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/entity/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/rsa/sz2212.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysRoleMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/dto/MenuAndAuth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/dto/SysMenuDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/dto/SysUserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/ManagerServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Prod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdComm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdFavorite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdProp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdPropValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdTagReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Sku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/ProductServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/base/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/log/anno/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/log/aop/LogAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/base/BaseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysRoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/auth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/auth-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/constant/GatewayConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/constants/GatewayConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/filters/CustomFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/filters/CustomFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/route/LoginRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/gateway/src/main/java/com/example/shop/route/LoginRoute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iaas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/iaas/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/ManagerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/ManagerServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysUserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +29,7 @@
       <list>
         <option value="Interface" />
         <option value="package.json" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -95,40 +58,40 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "E:/empty/sz2212/stage5/powershop/powershop/mall4v/package.json",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.10644531",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
-    "spring.configuration.checksum": "1195745b344e5dffcdce9778067f10d6",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/empty/sz2212/stage5/powershop/powershop/mall4v/package.json&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.10644531&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1195745b344e5dffcdce9778067f10d6&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -148,7 +111,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="com.example.shop.config.WebSecurityServerConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.shop.config.WebSecurityServerConfig" />
       <module name="auth-server" />
@@ -256,9 +219,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.AuthServerApplication" />
         <item itemvalue="Spring Boot.ProductServiceApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Application.com.example.shop.config.WebSecurityServerConfig" />
       </list>
     </recent_temporary>
@@ -276,7 +239,8 @@
       <workItem from="1685062356784" duration="691000" />
       <workItem from="1685075115868" duration="17944000" />
       <workItem from="1685244647105" duration="15146000" />
-      <workItem from="1685327427150" duration="25491000" />
+      <workItem from="1685327427150" duration="29912000" />
+      <workItem from="1685408830034" duration="18511000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目依赖创建">
       <created>1684938131681</created>
@@ -292,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685089677779</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增">
+      <created>1685375286694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685375286694</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,19 +289,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始项目依赖创建" />
     <MESSAGE value="授权服务器搭建和登录操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="授权服务器搭建和登录操作" />
+    <MESSAGE value="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增" />
+    <option name="LAST_COMMIT_MESSAGE" value="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java</url>
-          <line>22</line>
+          <line>23</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java</url>
-          <line>55</line>
+          <line>56</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

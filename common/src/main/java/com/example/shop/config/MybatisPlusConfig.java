@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @author: William
  * @date: 2023-05-26 17:31
  **/
-@MapperScan(basePackages = {"com.example.shop.mapper"})
+@MapperScan(basePackages = {"com.example.shop.mapper","com.example.shop.log.mapper"})
 @Configuration
 public class MybatisPlusConfig {
 

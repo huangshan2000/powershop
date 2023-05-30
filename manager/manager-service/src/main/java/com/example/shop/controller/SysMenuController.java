@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.example.shop.domain.SysMenu;
 import com.example.shop.dto.MenuAndAuth;
 import com.example.shop.entity.R;
+import com.example.shop.log.anno.Log;
 import com.example.shop.service.SysMenuService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -112,6 +113,7 @@ public class SysMenuController {
      *  如果是table请求，那么查询所有菜单列表数据
      * @return
      */
+    @Log(operation = "查询菜单列表信息")
     @GetMapping({"/table","/list"})
     @PreAuthorize("hasAuthority('sys:menu:list')")
     public R<List<SysMenu>> table() {
