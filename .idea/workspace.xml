@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/base/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/log/anno/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/log/aop/LogAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/base/BaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="管理员列表操作,角色管理,菜单管理操作">
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/FileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/properties/MinIOProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-api/src/main/java/com/example/shop/domain/SysUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/ManagerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/ManagerServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/manager-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/manager-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +112,11 @@
           <option name="PATTERN" value="com.example.shop.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -240,7 +237,7 @@
       <workItem from="1685075115868" duration="17944000" />
       <workItem from="1685244647105" duration="15146000" />
       <workItem from="1685327427150" duration="29912000" />
-      <workItem from="1685408830034" duration="18511000" />
+      <workItem from="1685408830034" duration="26697000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目依赖创建">
       <created>1684938131681</created>
@@ -263,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685375286694</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="管理员列表操作,角色管理,菜单管理操作">
+      <created>1685438862154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685438862154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +294,8 @@
     <MESSAGE value="初始项目依赖创建" />
     <MESSAGE value="授权服务器搭建和登录操作" />
     <MESSAGE value="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增" />
-    <option name="LAST_COMMIT_MESSAGE" value="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增" />
+    <MESSAGE value="管理员列表操作,角色管理,菜单管理操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="管理员列表操作,角色管理,菜单管理操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

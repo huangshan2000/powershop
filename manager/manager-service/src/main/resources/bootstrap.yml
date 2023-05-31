@@ -10,4 +10,4 @@ spring:
         prefix: application
         file-extension: yaml
   profiles:
-    active: rabbitmq, nacos,datasource,management,mybatis-plus,redis,mvc,jackson
+    active: rabbitmq, nacos,datasource,management,mybatis-plus,redis,mvc,jackson,minio
