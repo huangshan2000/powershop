@@ -120,6 +120,12 @@ public class ProdComm implements Serializable {
     @TableField(value = "evaluate")
     private Integer evaluate;
 
+    /**
+     * 当前评论的商品的名称
+     */
+    @TableField(value = "prod_name")
+    private String prodName;
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

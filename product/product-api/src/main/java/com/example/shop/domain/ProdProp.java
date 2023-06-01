@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 
@@ -46,6 +47,9 @@ public class ProdProp implements Serializable {
      */
     @TableField(value = "shop_id")
     private Long shopId;
+
+    @TableField(exist = false)
+    private List<ProdPropValue> prodPropValues;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

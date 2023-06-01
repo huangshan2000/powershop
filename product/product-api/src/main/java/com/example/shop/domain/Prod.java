@@ -1,9 +1,6 @@
 package com.example.shop.domain;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,12 +10,14 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 商品
+ *
  * @TableName prod
  */
-@TableName(value ="prod")
+@TableName(value = "prod")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -137,8 +136,26 @@ public class Prod implements Serializable {
      * 版本 乐观锁
      */
     @TableField(value = "version")
+    @Version
     private Integer version;
 
     @TableField(exist = false)
+    private List<Sku> skuList;
+
+    @TableField(exist = false)
+    private List<Long> tagList;
+
+    @TableField(exist = false)
     private static final long serialVersionUID = 1L;
+
+    @TableField(exist = false)
+    private deliveryModeVo deliveryModeVo;
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    class deliveryModeVo {
+        private Boolean hasUserPickUp;
+        private Boolean hasShopDelivery;
+    }
 }

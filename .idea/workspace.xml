@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="管理员列表操作,角色管理,菜单管理操作">
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/controller/FileUploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/manager-service/src/main/java/com/example/shop/properties/MinIOProperties.java" afterDir="false" />
+    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="文件上传操作">
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/base/BaseProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/ProdCommController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/ProdController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/ProdPropController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/ProdTagController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/manager-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/manager-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/manager-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Prod.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Prod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdComm.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdComm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdProp.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdProp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +93,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.shop.base" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\product\product-api\src\main\java\com\example\shop" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\product\product-service\src\main\resources" />
@@ -100,6 +108,7 @@
     <option name="configurationTypes">
       <set>
         <option value="SpringBootApplicationConfigurationType" />
+        <option value="js.build_tools.npm" />
       </set>
     </option>
   </component>
@@ -162,11 +171,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="ManagerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="manager-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.shop.ManagerServiceApplication" />
       <option name="VM_PARAMETERS" value="-Xms64m -Xmx128m" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
         <option name="credential" />
         <option name="region" />
@@ -219,6 +234,7 @@
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.AuthServerApplication" />
         <item itemvalue="Spring Boot.ProductServiceApplication" />
+        <item itemvalue="Spring Boot.ManagerServiceApplication" />
         <item itemvalue="Application.com.example.shop.config.WebSecurityServerConfig" />
       </list>
     </recent_temporary>
@@ -237,7 +253,12 @@
       <workItem from="1685075115868" duration="17944000" />
       <workItem from="1685244647105" duration="15146000" />
       <workItem from="1685327427150" duration="29912000" />
-      <workItem from="1685408830034" duration="26697000" />
+      <workItem from="1685408830034" duration="40914000" />
+      <workItem from="1685584107145" duration="5652000" />
+      <workItem from="1685592140878" duration="268000" />
+      <workItem from="1685592861956" duration="667000" />
+      <workItem from="1685597400086" duration="507000" />
+      <workItem from="1685605390161" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目依赖创建">
       <created>1684938131681</created>
@@ -267,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685438862154</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="文件上传操作">
+      <created>1685509405286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685509405286</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +323,8 @@
     <MESSAGE value="授权服务器搭建和登录操作" />
     <MESSAGE value="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增" />
     <MESSAGE value="管理员列表操作,角色管理,菜单管理操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="管理员列表操作,角色管理,菜单管理操作" />
+    <MESSAGE value="文件上传操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件上传操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
