@@ -13,6 +13,9 @@
         <module>common</module>
         <module>manager</module>
         <module>product</module>
+        <module>store</module>
+        <module>store/store-api</module>
+        <module>store/store-service</module>
     </modules>
 
     <properties>

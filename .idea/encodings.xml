@@ -23,5 +23,11 @@
     <file url="file://$PROJECT_DIR$/product/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/store-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/store-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/store-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store/store-service/src/main/resources" charset="UTF-8" />
   </component>
 </project>

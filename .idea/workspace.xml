@@ -5,16 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="商品管理操作">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/contants/QueueConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdEs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdEsCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/config/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/pool/ProductThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/repositry/ProdEsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/service/ImportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/service/impl/ImportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-api/src/main/java/com/example/shop/domain/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-api/src/main/java/com/example/shop/domain/HotSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-api/src/main/java/com/example/shop/domain/IndexImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-api/src/main/java/com/example/shop/domain/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-api/src/main/java/com/example/shop/domain/PickAddr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/java/com/example/shop/StoreServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/java/com/example/shop/base/BaseStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/java/com/example/shop/controller/AreaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/java/com/example/shop/controller/HotSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/java/com/example/shop/controller/IndexImgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/java/com/example/shop/controller/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/java/com/example/shop/controller/PicAddrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/store-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/Category$CategoryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/Prod$ProdBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/Prod$deliveryModeVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/Prod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdComm$ProdCommBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdComm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdEs$ProdEsBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdEs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdEsCount$ProdEsCountBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdEsCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdFavorite$ProdFavoriteBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdFavorite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdProp$ProdPropBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdProp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdPropValue$ProdPropValueBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdPropValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdTag$ProdTagBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdTagReference$ProdTagReferenceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/ProdTagReference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/Sku$SkuBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/product-api/com/example/shop/domain/Sku.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,61 +89,61 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/empty/sz2212/stage5/powershop/powershop/mall4v/package.json&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.10644531&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;1195745b344e5dffcdce9778067f10d6&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "E:/empty/sz2212/stage5/powershop/powershop/store/store-api/src/main/java/com/example/shop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.10644531",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
+    "spring.configuration.checksum": "1195745b344e5dffcdce9778067f10d6",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.shop.service.impl" />
       <recent name="com.example.shop.base" />
+      <recent name="com.example.shop.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\empty\sz2212\stage5\powershop\powershop\store\store-api\src\main\java\com\example\shop" />
+      <recent name="E:\empty\sz2212\stage5\powershop\powershop\store\store-service\src\main\resources" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\product\product-api\src\main\java\com\example\shop" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\product\product-service\src\main\resources" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\manager\manager-api\src\main\java\com\example\shop" />
-      <recent name="E:\empty\sz2212\stage5\powershop\powershop\manager\manager-service\src\main\resources" />
-      <recent name="E:\empty\sz2212\stage5\powershop\powershop\common\src\main\resources\rsa" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.shop.controller" />
       <recent name="com.example.shop.domain" />
       <recent name="com.example.shop.contants" />
       <recent name="com.example.shop.pool" />
       <recent name="com.example.shop.repositry" />
-      <recent name="com.example.shop.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -120,25 +154,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="WebSecurityServerConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.shop.config.WebSecurityServerConfig" />
-      <module name="auth-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.shop.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.StoreServiceApplication">
     <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="auth-server" />
@@ -219,6 +235,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StoreServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="store-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.shop.StoreServiceApplication" />
+      <option name="VM_PARAMETERS" value="-Xms64m -Xmx128m" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/mall4v/package.json" />
       <command value="run" />
@@ -230,8 +266,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.com.example.shop.config.WebSecurityServerConfig" />
       <item itemvalue="npm.dev" />
+      <item itemvalue="Spring Boot.StoreServiceApplication" />
       <item itemvalue="Spring Boot.ManagerServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.AuthServerApplication" />
@@ -239,11 +275,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ProductServiceApplication" />
+        <item itemvalue="Spring Boot.StoreServiceApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.AuthServerApplication" />
+        <item itemvalue="Spring Boot.ProductServiceApplication" />
         <item itemvalue="Spring Boot.ManagerServiceApplication" />
-        <item itemvalue="Application.com.example.shop.config.WebSecurityServerConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -267,6 +303,7 @@
       <workItem from="1685592861956" duration="667000" />
       <workItem from="1685597400086" duration="507000" />
       <workItem from="1685605390161" duration="16093000" />
+      <workItem from="1685668952114" duration="8421000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目依赖创建">
       <created>1684938131681</created>
