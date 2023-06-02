@@ -1,0 +1,18 @@
+package com.example.shop.mapper;
+
+import com.example.shop.domain.SysUser;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+/**
+* @author Lenovo
+* @description 针对表【sys_user(系统用户)】的数据库操作Mapper
+* @createDate 2023-05-28 11:46:00
+* @Entity com.example.shop.domain.SysUser
+*/
+public interface SysUserMapper extends BaseMapper<SysUser> {
+
+}
+
+
+
+

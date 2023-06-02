@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="文件上传操作">
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/base/BaseProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/ProdCommController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/ProdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/ProdPropController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/controller/ProdTagController.java" afterDir="false" />
+    <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="商品管理操作">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/contants/QueueConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdEs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdEsCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/pool/ProductThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/repositry/ProdEsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/service/ImportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/service/impl/ImportServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Prod.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/Prod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdComm.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdComm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdProp.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-api/src/main/java/com/example/shop/domain/ProdProp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/product-service/src/main/java/com/example/shop/ProductServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +94,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.shop.service.impl" />
       <recent name="com.example.shop.base" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -102,6 +103,13 @@
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\manager\manager-api\src\main\java\com\example\shop" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\manager\manager-service\src\main\resources" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\common\src\main\resources\rsa" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.shop.domain" />
+      <recent name="com.example.shop.contants" />
+      <recent name="com.example.shop.pool" />
+      <recent name="com.example.shop.repositry" />
+      <recent name="com.example.shop.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,7 +121,7 @@
     </option>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration name="com.example.shop.config.WebSecurityServerConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="WebSecurityServerConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.shop.config.WebSecurityServerConfig" />
       <module name="auth-server" />
       <extension name="coverage">
@@ -231,9 +239,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ProductServiceApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.AuthServerApplication" />
-        <item itemvalue="Spring Boot.ProductServiceApplication" />
         <item itemvalue="Spring Boot.ManagerServiceApplication" />
         <item itemvalue="Application.com.example.shop.config.WebSecurityServerConfig" />
       </list>
@@ -258,7 +266,7 @@
       <workItem from="1685592140878" duration="268000" />
       <workItem from="1685592861956" duration="667000" />
       <workItem from="1685597400086" duration="507000" />
-      <workItem from="1685605390161" duration="1221000" />
+      <workItem from="1685605390161" duration="16093000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目依赖创建">
       <created>1684938131681</created>
@@ -295,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685509405286</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="商品管理操作">
+      <created>1685606971495</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685606971495</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +339,8 @@
     <MESSAGE value="公共资源微服务搭建,后台管理系统微服务搭建,商品模块微服务搭建,加载首页页面数据,菜单的查询与新增" />
     <MESSAGE value="管理员列表操作,角色管理,菜单管理操作" />
     <MESSAGE value="文件上传操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件上传操作" />
+    <MESSAGE value="商品管理操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品管理操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
