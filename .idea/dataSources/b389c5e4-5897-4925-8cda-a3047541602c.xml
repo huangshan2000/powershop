@@ -1120,7 +1120,7 @@ app_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="302" parent="237" name="area_id">
-      <AutoIncrement>659006000003</AutoIncrement>
+      <AutoIncrement>659006000004</AutoIncrement>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1528,7 +1528,7 @@ shop_id</ColNames>
       <Position>1</Position>
     </column>
     <column id="377" parent="246" name="hot_search_id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>4</AutoIncrement>
       <Comment>主键</Comment>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
@@ -1579,7 +1579,7 @@ shop_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="386" parent="247" name="img_id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>4</AutoIncrement>
       <Comment>主键</Comment>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
@@ -1735,7 +1735,7 @@ shop_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="415" parent="250" name="id">
-      <AutoIncrement>5</AutoIncrement>
+      <AutoIncrement>6</AutoIncrement>
       <Comment>公告id</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
@@ -2396,7 +2396,7 @@ order_number</ColNames>
       <UnderlyingIndexName>primary_order_no</UnderlyingIndexName>
     </key>
     <column id="537" parent="256" name="addr_id">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>3</AutoIncrement>
       <Comment>ID</Comment>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
@@ -2609,7 +2609,7 @@ order_number</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="578" parent="260" name="prod_id">
-      <AutoIncrement>95</AutoIncrement>
+      <AutoIncrement>96</AutoIncrement>
       <Comment>产品ID</Comment>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
@@ -3072,7 +3072,7 @@ order_number</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="663" parent="265" name="prop_id">
-      <AutoIncrement>82</AutoIncrement>
+      <AutoIncrement>83</AutoIncrement>
       <Comment>属性id</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
@@ -3103,7 +3103,7 @@ order_number</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="669" parent="266" name="value_id">
-      <AutoIncrement>397</AutoIncrement>
+      <AutoIncrement>402</AutoIncrement>
       <Comment>属性值ID</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
@@ -3191,7 +3191,7 @@ order_number</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="686" parent="268" name="reference_id">
-      <AutoIncrement>361</AutoIncrement>
+      <AutoIncrement>366</AutoIncrement>
       <Comment>分组引用id</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
@@ -3551,7 +3551,7 @@ order_number</ColNames>
       <UnderlyingIndexName>mobile</UnderlyingIndexName>
     </key>
     <column id="755" parent="274" name="sku_id">
-      <AutoIncrement>425</AutoIncrement>
+      <AutoIncrement>430</AutoIncrement>
       <Comment>单品ID</Comment>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
@@ -4239,12 +4239,12 @@ order_number</ColNames>
     </column>
     <column id="887" parent="289" name="login_password">
       <Comment>登录密码</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <Position>5</Position>
     </column>
     <column id="888" parent="289" name="pay_password">
       <Comment>支付密码</Comment>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <Position>6</Position>
     </column>
     <column id="889" parent="289" name="user_mobile">

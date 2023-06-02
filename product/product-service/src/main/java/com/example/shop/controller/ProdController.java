@@ -11,6 +11,8 @@ import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @author: William
  * @date: 2023-06-01 10:04
@@ -28,8 +30,8 @@ public class ProdController extends BaseProduct {
                 prodService.page(
                         page,
                         new LambdaQueryWrapper<Prod>()
-                                .eq(ObjectUtils.isNotEmpty(prod.getStatus()),Prod::getStatus,prod.getStatus())
-                                .like(StringUtils.isNotBlank(prod.getProdName()),Prod::getProdName,prod.getProdName())
+                                .eq(ObjectUtils.isNotEmpty(prod.getStatus()), Prod::getStatus, prod.getStatus())
+                                .like(StringUtils.isNotBlank(prod.getProdName()), Prod::getProdName, prod.getProdName())
                 )
         );
     }
@@ -46,6 +48,12 @@ public class ProdController extends BaseProduct {
         );
     }
 
-
-
+    //----------------远程调用-------------------
+    @GetMapping("/list")
+    public List<Prod> list(@RequestParam("ids") List<Long> ids) {
+        return prodService.list(
+                new LambdaQueryWrapper<Prod>()
+                        .in(Prod::getProdId,ids)
+        );
+    }
 }

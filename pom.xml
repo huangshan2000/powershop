@@ -16,6 +16,7 @@
         <module>store</module>
         <module>store/store-api</module>
         <module>store/store-service</module>
+        <module>member</module>
     </modules>
 
     <properties>
