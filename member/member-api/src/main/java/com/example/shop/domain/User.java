@@ -131,6 +131,9 @@ public class User implements Serializable {
     @TableField(value = "score")
     private Integer score;
 
+    @TableField(value = "wx_template_openid")
+    private String wxTemplateOpenId;
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 }

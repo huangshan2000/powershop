@@ -18,6 +18,7 @@
         <module>store/store-service</module>
         <module>member</module>
         <module>search</module>
+        <module>message</module>
     </modules>
 
     <properties>

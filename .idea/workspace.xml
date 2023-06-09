@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d929b8-f3c5-45ab-b4eb-82abf46b3cdf" name="Changes" comment="商品管理操作">
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/entity/AliSms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/entity/WxMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/member-service/src/main/java/com/example/shop/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/member-service/src/main/java/com/example/shop/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/java/com/example/job/GetWxAccessTokenTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/java/com/example/shop/MessageServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/java/com/example/shop/properties/AliyunProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/java/com/example/shop/properties/WxProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/java/com/example/shop/receive/SmsReceiveListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/java/com/example/shop/receive/WxTemplateMsgReceiveListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/java/com/example/shop/utils/SmsUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/message-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b389c5e4-5897-4925-8cda-a3047541602c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b389c5e4-5897-4925-8cda-a3047541602c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/example/shop/contants/QueueConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/shop/contants/QueueConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member/member-api/src/main/java/com/example/shop/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/member/member-api/src/main/java/com/example/shop/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +46,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="5748525e-70f0-4193-896e-9f99476224e3" />
@@ -61,7 +84,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/empty/sz2212/stage5/powershop/powershop/search/search-service/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/empty/sz2212/stage5/powershop/powershop/message/message-service/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,7 +94,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.10644531&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;327492338588ecf05bc7e9548882b345&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a11acd8f66ae6681f2fdaf4e80bd3b4e&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -89,11 +112,11 @@
       <recent name="com.example.shop.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\empty\sz2212\stage5\powershop\powershop\message\message-service\src\main\resources" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\search\search-service\src\main\resources" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\member\member-api\src\main\java\com\example\shop" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\member\member-service\src\main\resources" />
       <recent name="E:\empty\sz2212\stage5\powershop\powershop\store\store-api\src\main\java\com\example\shop" />
-      <recent name="E:\empty\sz2212\stage5\powershop\powershop\store\store-service\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.shop.controller" />
@@ -111,7 +134,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SearchServiceApplication">
+  <component name="RunManager" selected="Spring Boot.MessageServiceApplication">
     <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="auth-server" />
@@ -186,6 +209,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessageServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="message-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.shop.MessageServiceApplication" />
+      <option name="VM_PARAMETERS" value="-Xms64m -Xmx128m" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="product-service" />
@@ -220,26 +263,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StoreServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <module name="store-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.shop.StoreServiceApplication" />
-      <option name="VM_PARAMETERS" value="-Xms64m -Xmx128m" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.shop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/mall4v/package.json" />
       <command value="run" />
@@ -254,19 +277,19 @@
       <item itemvalue="npm.dev" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ManagerServiceApplication" />
+      <item itemvalue="Spring Boot.MessageServiceApplication" />
       <item itemvalue="Spring Boot.SearchServiceApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.MemberServiceApplication" />
-      <item itemvalue="Spring Boot.StoreServiceApplication" />
       <item itemvalue="Spring Boot.AuthServerApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SearchServiceApplication" />
         <item itemvalue="Spring Boot.AuthServerApplication" />
-        <item itemvalue="Spring Boot.StoreServiceApplication" />
         <item itemvalue="Spring Boot.MemberServiceApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.MessageServiceApplication" />
+        <item itemvalue="Spring Boot.SearchServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -292,6 +315,11 @@
       <workItem from="1685605390161" duration="16093000" />
       <workItem from="1685668952114" duration="27082000" />
       <workItem from="1685754793850" duration="7935000" />
+      <workItem from="1685776712907" duration="2236000" />
+      <workItem from="1685926731585" duration="10163000" />
+      <workItem from="1686018853029" duration="7194000" />
+      <workItem from="1686201590631" duration="5379000" />
+      <workItem from="1686279648315" duration="7061000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目依赖创建">
       <created>1684938131681</created>
