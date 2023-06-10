@@ -4,8 +4,10 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.shop.base.BaseProduct;
 import com.example.shop.domain.Prod;
+import com.example.shop.domain.Sku;
 import com.example.shop.entity.R;
 import com.example.shop.service.ProdService;
+import com.example.shop.service.SkuService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -23,6 +25,8 @@ import java.util.List;
 public class ProdController extends BaseProduct {
 
     private final ProdService prodService;
+
+    private final SkuService skuService;
 
     @GetMapping("/page")
     public R<Page<Prod>> page(Page<Prod> page, Prod prod) {
@@ -53,7 +57,12 @@ public class ProdController extends BaseProduct {
     public List<Prod> list(@RequestParam("ids") List<Long> ids) {
         return prodService.list(
                 new LambdaQueryWrapper<Prod>()
-                        .in(Prod::getProdId,ids)
+                        .in(Prod::getProdId, ids)
         );
+    }
+
+    @GetMapping("/sku/list")
+    public List<Sku> skuList(@RequestParam("ids") List<Long> ids) {
+        return skuService.listByIds(ids);
     }
 }
