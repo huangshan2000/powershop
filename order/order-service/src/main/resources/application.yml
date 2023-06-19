@@ -1,0 +1,7 @@
+# 端口号
+server:
+  port: 10001
+# 微服务名称
+spring:
+  application:
+    name: order-service

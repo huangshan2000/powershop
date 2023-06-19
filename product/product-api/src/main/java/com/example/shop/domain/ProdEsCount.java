@@ -14,4 +14,5 @@ import lombok.experimental.Accessors;
 public class ProdEsCount {
     private Long prodId;
     private Long count;
+    private Long skuId;
 }

@@ -5,10 +5,7 @@ import com.example.shop.domain.User;
 import com.example.shop.entity.R;
 import com.example.shop.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
@@ -37,5 +34,11 @@ public class UserController extends BaseMember {
                                 .setUserLastip(request.getRemoteAddr())
                 )
         );
+    }
+
+    //-----------远程调用--------
+    @GetMapping("/{id}")
+    public User getUser(@PathVariable("id") String id){
+        return userService.getById(id);
     }
 }

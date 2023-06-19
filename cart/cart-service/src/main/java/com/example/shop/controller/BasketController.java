@@ -7,11 +7,9 @@ import com.example.shop.entity.R;
 import com.example.shop.feign.ProductServiceFeign;
 import com.example.shop.service.BasketService;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -210,4 +208,20 @@ public class BasketController extends BaseCart {
                 info(basketIds).getBody().getCartMoney()
         );
     }
+
+    //------------远程调用----------
+    @GetMapping("/list")
+    public List<Basket> list(@RequestParam("ids") List<Long> ids) {
+        return basketService.listByIds(ids);
+    }
+
+    @DeleteMapping("/clearCart")
+    public boolean clearCart(@RequestParam("userId") String userId, @RequestParam("skuId") List<Long> skuIds){
+        return basketService.remove(
+                new LambdaQueryWrapper<Basket>()
+                        .eq(StringUtils.isNotBlank(userId), Basket::getUserId, userId)
+                        .in(!CollectionUtils.isEmpty(skuIds),Basket::getSkuId,skuIds)
+        );
+    }
+
 }

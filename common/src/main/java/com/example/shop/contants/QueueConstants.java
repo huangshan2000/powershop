@@ -17,4 +17,18 @@ public interface QueueConstants {
      */
     String WX_MSG_QUEUE = "wx.msg.queue";
 
+    /**
+     * 延迟队列
+     */
+    String ORDER_MS_QUEUE = "order.ms.queue";
+
+    /**
+     * 死信队列
+     */
+    String ORDER_DEAD_QUEUE = "order.dead.queue";
+
+    String ORDER_DEAD_EX = "order.dead.ex";
+
+    String ORDER_DEAD_KEY = "order.dead.key";
+
 }

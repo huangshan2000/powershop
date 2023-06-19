@@ -7,6 +7,7 @@ import com.example.shop.domain.UserAddr;
 import com.example.shop.entity.R;
 import com.example.shop.service.UserAddrService;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -81,14 +82,23 @@ public class UserAddrController extends BaseMember {
                                         //查询是否已经存在默认收货地址
                                         userAddrService.count(
                                                 new LambdaQueryWrapper<UserAddr>()
-                                                        .eq(UserAddr::getUserId,getWxUserId())
-                                                        .eq(UserAddr::getCommonAddr,1)
+                                                        .eq(UserAddr::getUserId, getWxUserId())
+                                                        .eq(UserAddr::getCommonAddr, 1)
                                         ) > 0 ? 0 : 1
                                 )
                                 .setCreateTime(new Date())
                                 .setVersion(1)
                                 .setUpdateTime(new Date())
                 )
+        );
+    }
+
+    @GetMapping("/default")
+    public UserAddr defaultUserAddr(@RequestParam("userId") String userId) {
+        return userAddrService.getOne(
+                new LambdaQueryWrapper<UserAddr>()
+                        .eq(StringUtils.isNotBlank(userId),UserAddr::getUserId,userId)
+                        .eq(UserAddr::getCommonAddr,1)
         );
     }
 }
